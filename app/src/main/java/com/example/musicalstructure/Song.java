@@ -9,10 +9,12 @@ public class Song {
 
 
 
+
     public Song(String songName,String albumName,int imageResourceId){
         this.songName=songName;
         this.albumName=albumName;
         this.imageResourceId=imageResourceId;
+
 
 
     }
@@ -22,6 +24,7 @@ public class Song {
 
         this.albumName=albumName;
         this.imageResourceId=imageResourceId;
+
 
     }
 
@@ -39,5 +42,12 @@ public class Song {
 
     public int getImageResourceId() {
         return imageResourceId;
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "songName='" + songName + '\'' +
+                '}';
     }
 }
