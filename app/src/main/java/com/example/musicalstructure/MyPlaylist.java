@@ -36,8 +36,6 @@ public class MyPlaylist extends AppCompatActivity {
         playlist.add(new Song("Seafret","Wildfire",R.drawable.wildfire));
         playlist.add(new Song("I\'m coming clean","Ezra Furman",R.drawable.clean));
 
-
-
        PlaylistAdapter adapter=new PlaylistAdapter(this,playlist);
         ListView playlistView=(ListView)findViewById(R.id.list);
         playlistView.setAdapter(adapter);
@@ -46,15 +44,11 @@ public class MyPlaylist extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-
                 Intent nowplayingIntent=new Intent(MyPlaylist.this,NowPlaying.class);
                 startActivity(nowplayingIntent);
 
-
             }
         });
-
-
 
         }
     }

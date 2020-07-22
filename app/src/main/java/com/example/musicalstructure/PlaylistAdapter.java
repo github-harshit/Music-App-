@@ -29,25 +29,14 @@ public class PlaylistAdapter extends ArrayAdapter<Song> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+
         Song currentSong = getItem(position);
-
-        // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.song_name);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
         nameTextView.setText(currentSong.getSongName());
-
-        // Find the TextView in the list_item.xml layout with the ID version_number
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.album_name);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
         numberTextView.setText(currentSong.getAlbumName());
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.image_name);
-        // Get the image resource ID from the current AndroidFlavor object and
-        // set the image to iconView
         iconView.setImageResource(currentSong.getImageResourceId());
-
 
         return listItemView;
     }

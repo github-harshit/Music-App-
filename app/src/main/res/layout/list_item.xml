@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="false">
 
-    <Button
-        android:id="@+id/playnow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text="Play">
-
-    </Button>-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    android:minHeight="@dimen/list_item_height"
     android:background="@color/background"
+
     android:descendantFocusability="blocksDescendants"
-    android:focusable="false">
+    android:focusable="false"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal">
 
-       <ImageView
+    <ImageView
 
-       android:id="@+id/image_name"
-       android:layout_width="@dimen/list_item_height"
-       android:layout_height="@dimen/list_item_height"
-       android:src="@mipmap/ic_launcher">
+        android:id="@+id/image_name"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@mipmap/ic_launcher">
 
+    </ImageView>
 
-
-   </ImageView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,20 +27,17 @@
         android:paddingLeft="16dp">
 
 
-
-    <TextView
-        android:id="@+id/song_name"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="bottom"
-        tools:text="song"
-        android:textSize="18sp"
-        >
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            tools:text="song">
 
 
-
-    </TextView>
+        </TextView>
 
         <TextView
             android:id="@+id/album_name"
@@ -62,26 +46,20 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textSize="18sp"
-            tools:text="album"
-            >
+            tools:text="album">
 
         </TextView>
+
         <TextView
             android:id="@+id/play"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30dp"
             android:minHeight="0dp"
-            android:minWidth="30dp">
+            tools:text="button">
 
         </TextView>
 
     </LinearLayout>
 
-
-
-
-
-
 </LinearLayout>
-<!--</RelativeLayout>-->

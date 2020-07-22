@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background4"></ImageView>
+        android:src="@drawable/background"></ImageView>
 
     <TextView
         android:id="@+id/now"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Now Playing"
+        android:text="@string/now_playing"
         android:textSize="24sp"
         tools:text="Now Playing"
         android:layout_centerVertical="true"
@@ -30,7 +30,7 @@
         android:id="@+id/currentSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=", "
+        android:text="@string/music_name"
         android:layout_below="@id/now"
         tools:text="what is playing "
         android:layout_centerVertical="true"

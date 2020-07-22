@@ -19,17 +19,17 @@ public class Artist extends AppCompatActivity {
         getSupportActionBar().setTitle("My playlist");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ArrayList<Song> playlist=new ArrayList<Song>();
-        playlist.add(new Song("The Chainsmokers",R.drawable.unknown));
-        playlist.add(new Song("Justin Beiber",R.drawable.unknown));
-        playlist.add(new Song("Selena Gomez",R.drawable.unknown));
-        playlist.add(new Song("Radiohead",R.drawable.unknown));
+        playlist.add(new Song("The Chainsmokers",R.drawable.chainsmokers));
+        playlist.add(new Song("Charlie Puth",R.drawable.charlie));
+        playlist.add(new Song("Selena Gomez",R.drawable.selena));
+        playlist.add(new Song("Radiohead",R.drawable.radio_head));
         playlist.add(new Song(
-                "Chester Benningto",R.drawable.unknown));
-        playlist.add(new Song("A.R Rehman",R.drawable.unknown));
-        playlist.add(new Song("Prateek Kuhad",R.drawable.unknown));
-        playlist.add(new Song("Imagine Dragons",R.drawable.unknown));
-        playlist.add(new Song("Eminem",R.drawable.unknown));
-        playlist.add(new Song("Divine",R.drawable.unknown));
+                "Chester Benningto",R.drawable.chester));
+        playlist.add(new Song("A.R Rahman",R.drawable.rahman));
+        playlist.add(new Song("Prateek Kuhad",R.drawable.prateek_kuhad));
+        playlist.add(new Song("Imagine Dragons",R.drawable.imagine_dragons));
+        playlist.add(new Song("Eminem",R.drawable.eminem));
+        playlist.add(new Song("Divine",R.drawable.divine));
 
 
         PlaylistAdapter adapter=new PlaylistAdapter(this,playlist);
